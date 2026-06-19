@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Autoposter AI | Professional Creator Command Center</title>
+    <link rel="icon" type="image/png" href="logo.png">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&family=JetBrains+Mono&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #6366f1;
+            --accent: #c084fc;
+            --bg: #0f172a;
+            --card-bg: #1e293b;
+            --text: #f8fafc;
+            --text-muted: #94a3b8;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Outfit', sans-serif; background-color: var(--bg); color: var(--text); line-height: 1.6; }
+        
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+        
+        header { padding: 30px 0; display: flex; justify-content: space-between; align-items: center; }
+        .logo { display: flex; align-items: center; gap: 15px; text-decoration: none; }
+        .logo img { width: 45px; border-radius: 10px; }
+        .logo span { font-size: 1.8rem; font-weight: 700; color: var(--text); }
+
+        .hero { padding: 100px 0; text-align: center; }
+        .hero h1 { font-size: 4rem; font-weight: 800; margin-bottom: 25px; background: linear-gradient(135deg, #fff 0%, #94a3b8 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .hero p { font-size: 1.4rem; color: var(--text-muted); max-width: 800px; margin: 0 auto 40px; }
+        .badge { background: rgba(99, 102, 241, 0.1); border: 1px solid var(--primary); color: var(--primary); padding: 8px 20px; border-radius: 50px; font-weight: 600; font-size: 0.9rem; margin-bottom: 20px; display: inline-block; }
+
+        .section-header { text-align: center; margin-bottom: 60px; }
+        .section-header h2 { font-size: 2.5rem; margin-bottom: 15px; }
+        .section-header p { color: var(--text-muted); font-size: 1.1rem; }
+
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; margin-bottom: 100px; }
+        .card { background: var(--card-bg); padding: 40px; border-radius: 24px; border: 1px solid rgba(255,255,255,0.05); }
+        .card h3 { font-size: 1.5rem; margin-bottom: 20px; display: flex; align-items: center; gap: 10px; }
+        .card p { color: var(--text-muted); font-size: 1.05rem; }
+
+        .workflow { background: rgba(30, 41, 59, 0.5); padding: 100px 0; border-radius: 40px; margin-bottom: 100px; }
+        .workflow-step { margin-bottom: 40px; display: flex; gap: 30px; align-items: flex-start; }
+        .step-icon { width: 50px; height: 50px; background: var(--primary); border-radius: 12px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; font-weight: 800; font-size: 1.5rem; }
+        .step-content h4 { font-size: 1.3rem; margin-bottom: 10px; color: var(--accent); }
+
+        .tech-specs { padding: 80px 0; }
+        .tech-box { background: #000; padding: 30px; border-radius: 16px; font-family: 'JetBrains Mono', monospace; font-size: 0.9rem; color: #4ade80; border: 1px solid #1e293b; overflow-x: auto; }
+
+        .faq { max-width: 800px; margin: 0 auto 100px; }
+        .faq-q { font-weight: 700; font-size: 1.1rem; margin-bottom: 10px; color: var(--primary); }
+        .faq-a { color: var(--text-muted); margin-bottom: 30px; padding-left: 20px; border-left: 2px solid #1e293b; }
+
+        footer { padding: 80px 0 40px; border-top: 1px solid rgba(255,255,255,0.05); }
+        .footer-grid { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 40px; margin-bottom: 60px; }
+        .footer-links h5 { font-size: 1.1rem; margin-bottom: 20px; color: #fff; }
+        .footer-links a { display: block; color: var(--text-muted); text-decoration: none; margin-bottom: 12px; transition: color 0.2s; }
+        .footer-links a:hover { color: var(--primary); }
+
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 2.8rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <a href="#" class="logo">
+                <img src="logo.png" alt="Autoposter AI">
+                <span>Autoposter AI</span>
+            </a>
+            <nav style="display: flex; gap: 20px;">
+                <a href="privacy.html" style="color: var(--text-muted); text-decoration: none;">Privacy</a>
+                <a href="tos.html" style="color: var(--text-muted); text-decoration: none;">Terms</a>
+            </nav>
+        </header>
+
+        <section class="hero">
+            <span class="badge">Next-Gen Automation</span>
+            <h1>The Intelligent Engine for <br>Content Mastery</h1>
+            <p>Autoposter AI is a high-performance content orchestration tool designed for professional creators. Automate your cross-platform publishing with AI-optimized workflows.</p>
+        </section>
+
+        <section class="grid">
+            <div class="card">
+                <h3>⚡ Real-time Processing</h3>
+                <p>Advanced video engine that strips redundant metadata, re-encodes for mobile platforms, and ensures zero quality loss across TikTok and Instagram.</p>
+            </div>
+            <div class="card">
+                <h3>🤖 Gemini AI Core</h3>
+                <p>Integrated with Google Gemini AI to analyze frame context and generate meaningful, localized captions that drive engagement and retention.</p>
+            </div>
+            <div class="card">
+                <h3>🛡️ Enterprise-Grade Security</h3>
+                <p>Full OAuth 2.0 integration. We never see or store your credentials. Your access tokens are encrypted and handled with industry-standard security protocols.</p>
+            </div>
+        </section>
+
+        <div class="workflow">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Operational Workflow</h2>
+                    <p>How Autoposter AI handles your content from start to finish.</p>
+                </div>
+                
+                <div class="workflow-step">
+                    <div class="step-icon">01</div>
+                    <div class="step-content">
+                        <h4>Secure Handshake</h4>
+                        <p>Establish a secure connection with TikTok for Developers and Meta APIs using restricted-scope OAuth tokens.</p>
+                    </div>
+                </div>
+
+                <div class="workflow-step">
+                    <div class="step-icon">02</div>
+                    <div class="step-content">
+                        <h4>Content Analysis</h4>
+                        <p>The system performs a frame-by-frame analysis of your uploaded media to generate relevant metadata and AI captions.</p>
+                    </div>
+                </div>
+
+                <div class="workflow-step">
+                    <div class="step-icon">03</div>
+                    <div class="step-content">
+                        <h4>Multi-Channel Dispatch</h4>
+                        <p>Simultaneously publish to TikTok, YouTube Shorts, and Instagram Reels with optimized encoding for each platform's unique requirements.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <section class="tech-specs">
+            <div class="section-header">
+                <h2>Technical Specifications</h2>
+                <p>Under the hood of the Autoposter AI automation engine.</p>
+            </div>
+            <div class="tech-box">
+{
+  "engine": "Autoposter AI Core v2.5",
+  "ai_model": "Google Gemini Flash",
+  "supported_formats": ["MP4", "MOV", "WEBM"],
+  "security": ["OAuth 2.0", "SSL/TLS 1.3", "AES-256 Token Encryption"],
+  "integrations": ["TikTok Video API", "YouTube Data API v3", "Instagram Graph API"]
+}
+            </div>
+        </section>
+
+        <section class="faq">
+            <h2 class="section-title">Common Questions</h2>
+            
+            <div class="faq-q">Does Autoposter AI collect my personal data?</div>
+            <div class="faq-a">No. We only collect the minimum data necessary for publishing: your account ID and the media you explicitly choose to upload. We never sell or share data.</div>
+
+            <div class="faq-q">How does the AI captioning work?</div>
+            <div class="faq-a">Our system uses the Gemini AI API to "see" your video and create descriptive, engaging captions that fit the platform's culture and trends.</div>
+
+            <div class="faq-q">Is this compliant with TikTok's policies?</div>
+            <div class="faq-a">Absolutely. We use official TikTok for Developers APIs and follow all developer guidelines regarding data privacy and automation limits.</div>
+        </section>
+
+        <footer>
+            <div class="footer-grid">
+                <div style="flex: 1; min-width: 300px;">
+                    <a href="#" class="logo" style="margin-bottom: 20px;">
+                        <img src="logo.png" alt="Autoposter AI">
+                        <span>Autoposter AI</span>
+                    </a>
+                    <p style="color: var(--text-muted);">Empowering the next generation of content creators through intelligent automation.</p>
+                </div>
+                <div class="footer-links">
+                    <h5>Legal</h5>
+                    <a href="privacy.html">Privacy Policy</a>
+                    <a href="tos.html">Terms of Service</a>
+                </div>
+                <div class="footer-links">
+                    <h5>API Documentation</h5>
+                    <a href="https://developers.tiktok.com" target="_blank">TikTok API</a>
+                    <a href="https://developers.facebook.com" target="_blank">Instagram API</a>
+                </div>
+            </div>
+            <div style="text-align: center; color: var(--text-muted); font-size: 0.9rem;">
+                &copy; 2026 Autoposter AI. Developed for creators.
+            </div>
+        </footer>
+    </div>
+
+</body>
+</html>

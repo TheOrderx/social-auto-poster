@@ -1,0 +1,29 @@
+# Environment variables
+.env
+.env.lock
+.env.backup
+.env.tmp
+
+# Token refresh timestamp
+.last-token-refresh
+
+# Node modules
+node_modules/
+
+# Video files
+videos/
+*.mp4
+
+# Logs
+*.log
+npm-debug.log*
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
